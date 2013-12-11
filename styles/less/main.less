@@ -1,0 +1,274 @@
+@import 'includes/brand.less';
+@import 'includes/typography.less';
+@import 'includes/mixins.less';
+
+* {
+  .box-sizing;
+}
+
+body {
+  width:100%;
+  font-family: @bodyfontFamily;
+  font-size: @basefontsize;
+  font-weight: @basefontweight;
+  color: @basefontcolour;
+  -webkit-font-smoothing: antialiased;
+}
+.container{
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+
+}
+
+header {
+	overflow: auto;
+	width: 100%;
+	padding-top: 10px;
+	section{
+		float: none;
+		margin-top:130px;
+		border-top: 2px black solid;
+		border-bottom: 2px black solid;
+		height:79px;
+		background-color: #b70052;
+		a{
+			float: left;
+			margin: 15px 10px;
+			display: inline-block;
+			text-indent: -9999px;
+		}
+		#donate{
+			width: 171px;
+			height:45px;
+			background-image: url(../images/donate.png);
+			&:hover{
+				background-image: url("../images/donate(mouseOver).png");
+			}
+		}
+		#volunteer{
+			width:171px;
+			height:45px;
+			background-image: url(../images/volunteer.png);
+			&:hover{
+				background-image: url("../images/volunteer(mouseOver).png");	
+			}
+		}
+
+		#signupContainer{
+			float: right;
+			height: inherit;
+			height:75px;
+			width:465px;
+
+			p{
+				position: relative;
+				top:-10px;
+				display: inline;
+				margin: 10px;
+			}
+			textarea{
+				float: none;
+				margin-top: 20px;
+				height:30px;
+				width:175px;
+				font-size: 24px;
+				resize:none;
+				border:2px black solid;
+				display: inline-block;
+			}
+			#signup{
+				float: right;
+				width:81px;
+				height:33px;
+				margin-top:18px;
+				display: inline-block;
+				background-image: url(../images/signUp.png);
+				&:hover{
+					background-image: url("../images/signUp(mouseOver).png");
+				}
+			}
+		}
+	}
+}
+
+#wrapper {
+	overflow: auto;
+	padding: 50px 0px;
+	width: 100%;
+}
+
+section{
+	.maincontent{
+		display: inline-block;
+		float: left;
+    	padding: 0px 25px;
+    	width: 75%;
+	}
+	#products{
+		padding: 0px 25px;
+		width:100%;
+	}
+}
+
+article{
+	.post{
+		margin-bottom: 50px;
+		padding-bottom: 25px;
+		border-bottom: 1px #dd solid;
+	}
+}
+
+footer{	
+	width: 100%;
+	height:150px;
+	padding:5px;
+	overflow: hidden;
+	border-top: 2px black solid;
+	.logo{
+		width:284px;
+		border-right: 1px black solid;	
+	}
+	section{
+		float: left;
+		height:140px;
+		width:67%;
+		padding-left: 10px;
+		#footerLinks{
+			font-size: 22px;
+			li{
+				ul{
+					li{
+						display: inline-block;
+						a{
+							display: block;
+							margin: 0 10px 10px 0;
+							&:hover{
+								opacity:0.6;
+							}
+						}
+					}
+				}
+				p{
+					float: none;
+					font-size: 18px;
+					margin-top: 47px;
+					color: black;
+					a{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+}
+/* Header */
+
+.logo{ 
+	background: url(../images/wwcc-logo.png) no-repeat;
+  	display:inline-block;
+  	height:122px;
+  	width:239px;
+  	float: left;
+}
+
+nav {
+  	display:inline-block;
+  	width:auto;
+  	margin-left: 20px;
+  	float: left;
+  	height:auto;
+  	#socialMedia {
+  		display:block;
+  		width:100%;
+  		margin-right: 25px;
+  		li{
+  			display: inline-block;
+  			padding:5px;
+  			#twitter, #facebook, #youtube, #linkedin{
+  				display: block;
+  				height:60px;
+  				width:60px;
+  				text-indent: -9999px;
+  			}
+  			#twitter{
+  				background-image: url(../images/twitter.png);
+  				&:hover{
+  					opacity:0.6;
+  				}
+  			}
+  			#facebook{
+  				background-image: url(../images/facebook.png);
+  				&:hover{
+  					opacity:0.6;
+  				}
+  			}
+  			#youtube{
+  				background-image: url(../images/youtube.png);
+  				&:hover{
+  					opacity:0.6;
+  				}
+  			}
+  			#linkedin{
+  				background-image: url(../images/linkedin.png);
+  				&:hover{
+  					opacity:0.6;
+  				}
+  			}
+		}
+	}
+  	#navLinks {
+  		display:block;
+  		width: 100%;
+  		margin-right: 25px;
+  		li{
+  			display: inline-block;
+  			a {
+  				display: block;
+  				color: black;
+  				text-decoration: none;
+  				font-weight: 700;
+  				font-size: 1.3em;
+  				padding:35px 15px 5px 5px;
+			}
+			&:hover {
+  				opacity: 0.6;
+			}
+		}
+	}
+}
+
+/* Contact */
+
+.formgroup {
+  	margin: 15px 0px;
+  	label {
+  		display: block;
+  		font-weight: 500;
+  		font-size: 1.2em;
+  	}
+  	input[type="text"], textarea {
+    	display: block;
+    	padding: 10px 5px;
+    	width: 300px;
+    	border: 1px solid #ccc;
+    	border-radius: 4px;
+    	background-color: #fff;
+    	background-image: none;
+    	font-size: 1em;
+    	font-family: "Helvetica Neue",Helvetica,Arial, "Lucida Grande", sans-serif;
+	}
+	.btn {
+  		display: inline-block;
+  		margin-bottom: 0;
+  		padding: 6px 12px;
+  		border: 1px solid transparent;
+  		border-radius: 4px;
+  		text-align: center;
+  		font-size: 14px;
+  		font-family: "Helvetica Neue",Helvetica,Arial, "Lucida Grande", sans-serif;
+  		cursor: pointer;
+  		-webkit-appearance: none;
+	}
+}

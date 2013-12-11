@@ -1,0 +1,294 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+p {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  line-height: 1.5em;
+}
+h1,
+h2,
+h4 {
+  font-family: "Montserrat", "Times New Roman", Georgia, Serif;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 2.3em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 1.3em;
+  line-height: 1em;
+}
+h4 {
+  font-size: .5em;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+header {
+  overflow: auto;
+  width: 100%;
+  padding-top: 10px;
+}
+header section {
+  float: none;
+  margin-top: 130px;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  height: 79px;
+  background-color: #b70052;
+}
+header section a {
+  float: left;
+  margin: 15px 10px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+header section #donate {
+  width: 171px;
+  height: 45px;
+  background-image: url(../images/donate.png);
+}
+header section #donate:hover {
+  background-image: url("../images/donate(mouseOver).png");
+}
+header section #volunteer {
+  width: 171px;
+  height: 45px;
+  background-image: url(../images/volunteer.png);
+}
+header section #volunteer:hover {
+  background-image: url("../images/volunteer(mouseOver).png");
+}
+header section #signupContainer {
+  float: right;
+  height: inherit;
+  height: 75px;
+  width: 465px;
+}
+header section #signupContainer p {
+  position: relative;
+  top: -10px;
+  display: inline;
+  margin: 10px;
+}
+header section #signupContainer textarea {
+  float: none;
+  margin-top: 20px;
+  height: 30px;
+  width: 175px;
+  font-size: 24px;
+  resize: none;
+  border: 2px black solid;
+  display: inline-block;
+}
+header section #signupContainer #signup {
+  float: right;
+  width: 81px;
+  height: 33px;
+  margin-top: 18px;
+  display: inline-block;
+  background-image: url(../images/signUp.png);
+}
+header section #signupContainer #signup:hover {
+  background-image: url("../images/signUp(mouseOver).png");
+}
+#wrapper {
+  overflow: auto;
+  padding: 50px 0px;
+  width: 100%;
+}
+section .maincontent {
+  display: inline-block;
+  float: left;
+  padding: 0px 25px;
+  width: 75%;
+}
+section #products {
+  padding: 0px 25px;
+  width: 100%;
+}
+article .post {
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+  border-bottom: 1px #dd solid;
+}
+footer {
+  width: 100%;
+  height: 150px;
+  padding: 5px;
+  overflow: hidden;
+  border-top: 2px black solid;
+}
+footer .logo {
+  width: 284px;
+  border-right: 1px black solid;
+}
+footer section {
+  float: left;
+  height: 140px;
+  width: 67%;
+  padding-left: 10px;
+}
+footer section #footerLinks {
+  font-size: 22px;
+}
+footer section #footerLinks li ul li {
+  display: inline-block;
+}
+footer section #footerLinks li ul li a {
+  display: block;
+  margin: 0 10px 10px 0;
+}
+footer section #footerLinks li ul li a:hover {
+  opacity: 0.6;
+}
+footer section #footerLinks li p {
+  float: none;
+  font-size: 18px;
+  margin-top: 47px;
+  color: black;
+}
+footer section #footerLinks li p a {
+  display: block;
+}
+/* Header */
+.logo {
+  background: url(../images/wwcc-logo.png) no-repeat;
+  display: inline-block;
+  height: 122px;
+  width: 239px;
+  float: left;
+}
+nav {
+  display: inline-block;
+  width: auto;
+  margin-left: 20px;
+  float: left;
+  height: auto;
+}
+nav #socialMedia {
+  display: block;
+  width: 100%;
+  margin-right: 25px;
+}
+nav #socialMedia li {
+  display: inline-block;
+  padding: 5px;
+}
+nav #socialMedia li #twitter,
+nav #socialMedia li #facebook,
+nav #socialMedia li #youtube,
+nav #socialMedia li #linkedin {
+  display: block;
+  height: 60px;
+  width: 60px;
+  text-indent: -9999px;
+}
+nav #socialMedia li #twitter {
+  background-image: url(../images/twitter.png);
+}
+nav #socialMedia li #twitter:hover {
+  opacity: 0.6;
+}
+nav #socialMedia li #facebook {
+  background-image: url(../images/facebook.png);
+}
+nav #socialMedia li #facebook:hover {
+  opacity: 0.6;
+}
+nav #socialMedia li #youtube {
+  background-image: url(../images/youtube.png);
+}
+nav #socialMedia li #youtube:hover {
+  opacity: 0.6;
+}
+nav #socialMedia li #linkedin {
+  background-image: url(../images/linkedin.png);
+}
+nav #socialMedia li #linkedin:hover {
+  opacity: 0.6;
+}
+nav #navLinks {
+  display: block;
+  width: 100%;
+  margin-right: 25px;
+}
+nav #navLinks li {
+  display: inline-block;
+}
+nav #navLinks li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3em;
+  padding: 35px 15px 5px 5px;
+}
+nav #navLinks li:hover {
+  opacity: 0.6;
+}
+/* Contact */
+.formgroup {
+  margin: 15px 0px;
+}
+.formgroup label {
+  display: block;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.formgroup input[type="text"],
+.formgroup textarea {
+  display: block;
+  padding: 10px 5px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  background-image: none;
+  font-size: 1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.formgroup .btn {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
