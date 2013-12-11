@@ -3,10 +3,11 @@
       <a class="logo" href="index.php" alt="Working Women Community Centre Logo"></a>
       <nav>
         <ul id="socialMedia">
-          <li><a href="#" id="twitter">Twitter</a></li>
-          <li><a href="#" id="facebook">Facebook</a></li>
-          <li><a href="#" id="youtube">Youtube</a></li>
-          <li><a href="#" id="linkedin">Linkedin</a></li>
+          <li><p>Share us on: </p></li>
+          <li><a href="https://twitter.com/intent/tweet?text=Working%20Women%20Community%20Centre%20-%20Working%20Women%20Community%20Centre%20-%20http%3A%2F%2Fwww.workingwomencc.org%2F&source=webclient" id="twitter">Twitter</a></li>
+          <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.workingwomencc.org%2F" id="facebook">Facebook</a></li>
+          <li><a href="http://www.youtube.com/user/WorkingWomenCC?feature=watch" id="youtube">Youtube</a></li>
+          <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http:%2F/www.workingwomencc.org/&title=Working%20Women%20Community%20Centre%20-%20Working%20Women%20Community%20Centre&summary=&source=" id="linkedin">Linkedin</a></li>
         </ul>
         <ul id="navLinks">
           <li><a href="index.php">Home</a></li>

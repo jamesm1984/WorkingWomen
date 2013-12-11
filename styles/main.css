@@ -240,6 +240,18 @@ nav #socialMedia li #linkedin {
 nav #socialMedia li #linkedin:hover {
   opacity: 0.6;
 }
+nav #socialMedia li:first-child {
+  display: block;
+  height: 20px;
+  margin-top: -15px;
+  margin-bottom: 5px;
+}
+nav #socialMedia li:first-child p {
+  position: relative;
+  top: 0px;
+  font-size: 1.2em;
+  color: black;
+}
 nav #navLinks {
   display: block;
   width: 100%;
@@ -254,7 +266,7 @@ nav #navLinks li a {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.3em;
-  padding: 35px 15px 5px 5px;
+  padding: 25px 15px 5px 5px;
 }
 nav #navLinks li:hover {
   opacity: 0.6;
