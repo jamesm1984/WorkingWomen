@@ -5,21 +5,41 @@
 
     <div id="wrapper">
 
-      <section class="maincontent">
-        <article class="post">
-          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-          <div class="excerpt">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum suscipit dolor vitae feugiat. Curabitur et tempor erat. Pellentesque dolor magna, posuere quis massa non, scelerisque tempus mi. Proin dolor nibh, aliquet nec accumsan vitae, hendrerit et tortor. Nam ornare vulputate risus sit amet pharetra. Fusce volutpat urna a porta sagittis. Nam felis enim, condimentum eu malesuada a, pharetra sit amet lectus. Morbi malesuada tincidunt purus, eget semper ante adipiscing id. Sed at consequat libero, eu laoreet est. Mauris suscipit, nisi in molestie euismod, massa sapien volutpat magna, a laoreet turpis erat semper metus. Nulla vestibulum metus neque, ut bibendum sapien luctus at. Aenean a justo accumsan, rutrum nisi eu, aliquam purus.</p>
+      <section id="gallery">
+        <div id="mainImage">
+          <p>Sample text</p>
+        </div>
+        <div id="galleryImages">
+          <div id="imageContainer">
+            <a href="#1"><img src="" alt="picture"></a>
+            <a href="#2"><img src="" alt="picture"></a>
+            <a href="#3"><img src="" alt="picture"></a>
+            <a href="#4"><img src="" alt="picture"></a>
+            <a href="#5"><img src="" alt="picture"></a>
           </div>
-        </article>
-
-        <article class="post">
-          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-          <div class="excerpt">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum suscipit dolor vitae feugiat. Curabitur et tempor erat. Pellentesque dolor magna, posuere quis massa non, scelerisque tempus mi. Proin dolor nibh, aliquet nec accumsan vitae, hendrerit et tortor. Nam ornare vulputate risus sit amet pharetra. Fusce volutpat urna a porta sagittis. Nam felis enim, condimentum eu malesuada a, pharetra sit amet lectus. Morbi malesuada tincidunt purus, eget semper ante adipiscing id. Sed at consequat libero, eu laoreet est. Mauris suscipit, nisi in molestie euismod, massa sapien volutpat magna, a laoreet turpis erat semper metus. Nulla vestibulum metus neque, ut bibendum sapien luctus at. Aenean a justo accumsan, rutrum nisi eu, aliquam purus.</p>
-          </div>
-        </article>
+        </div>
       </section>
+
+      <section id="info">
+        <h2>35 years of working women</h2>
+        <p>At Working Women Community Centre we believe that immigrant women are at the core of successful families and thriving communities. By empowering immigrant women we help create more engaged mothers, daughters, colleagues and members of the community. In fact, studies have shown that when a woman is given an opportunity to realize her full potential, we all are better for it.</p>
+
+        <h2>Latest news & events</h2>
+        <h3>VICTORIA VILLAGE CRAFT SHOW @ the Victoria Park Hub - August 7th.</h3>
+        <p>Join fellow craft enthusiasts from community groups supported by WWCC as local craft stars host the first ever Victoria Village Craft Show. Our Hub’s very own Sewing Club, Knitting Club and Chinese Seniors Help Circle will be exhibiting their beautiful crafty creations this Friday, Aug, 9 at 1527 Victoria Park Ave. 1:00 – 4:00PM.</p>
+        <h3>Celebration of community projects by 20 youth in GTA next weekend - July 4th</h3>
+        <p><a href="#">http://yfile.news.yorku.ca/2013/06/28/symopsium-to-celebrate-community-projects-by-20-youth-in-gta/</a></p>
+        <h3>WORKSHOP: Free Creative Mind-body Retreat - June 26th</h3>
+        <p>Yoga & Expressive Arts Join us any Wednesday July 3rd & July 10th, 2013 From 10:00 a.m. to 12:00 p.m. Working Women Community Centre 533C Gladstone Ave. (Main intersection Bloor & Dufferin) For more info:   416 532 28 24</p>
+      </section>
+
+      <aside id="video">
+        <h2>Video<h2>
+        <a href="#"></a>
+
+      </aside>
+
     </div>
+
   </div>
 <?php include("includes/footer.php"); ?>
