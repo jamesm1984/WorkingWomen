@@ -448,9 +448,6 @@ nav #navLinks li:hover {
   .container {
     width: 100%;
   }
-  nav {
-    background-color: blue;
-  }
   nav #navLinks {
     display: block;
     width: 484px;
