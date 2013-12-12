@@ -10,6 +10,9 @@
 
   <link href='http://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css'>
 
+  <script src="js/jquery.1.10.2.js"></script>
+  <script src="js/function.js"></script>
+
     <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
