@@ -76,17 +76,19 @@ header section a {
   text-indent: -9999px;
 }
 header section #donate {
-  width: 171px;
+  width: 150px;
   height: 45px;
   background-image: url(../images/donate.png);
+  background-size: 100% 100%;
 }
 header section #donate:hover {
   background-image: url("../images/donate(mouseOver).png");
 }
 header section #volunteer {
-  width: 171px;
+  width: 150px;
   height: 45px;
   background-image: url(../images/volunteer.png);
+  background-size: 100% 100%;
 }
 header section #volunteer:hover {
   background-image: url("../images/volunteer(mouseOver).png");
@@ -95,13 +97,13 @@ header section #signupContainer {
   float: right;
   height: inherit;
   height: 75px;
-  width: 465px;
+  width: 427px;
 }
 header section #signupContainer p {
   position: relative;
   top: -10px;
   display: inline;
-  margin: 10px;
+  margin: 10px 5px;
 }
 header section #signupContainer textarea {
   float: none;
@@ -468,6 +470,18 @@ nav #navLinks li:hover {
   }
   nav #socialMedia {
     display: none;
+  }
+  #wrapper #info {
+    float: none;
+    width: 100%;
+    display: block;
+    padding: 0 20px;
+  }
+  #wrapper #video {
+    float: none;
+    width: 270px;
+    display: block;
+    margin: 0 auto;
   }
   footer {
     border-top: none;

@@ -22,7 +22,7 @@
         <a id="donate">Donate</a>
         <a id="volunteer">Volunteer</a>
         <div id="signupContainer">
-          <p>Sign up for our news letter</p>
+          <p>Sign up for news letter</p>
           <textarea placeholder="Email"></textarea>
           <a id="signup">Sign up</a>
         </div>
