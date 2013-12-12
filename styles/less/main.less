@@ -238,7 +238,7 @@ nav {
   				text-decoration: none;
   				font-weight: 700;
   				font-size: 1.3em;
-  				padding:25px 15px 5px 5px;
+  				padding:25px 5px 5px 5px;
 			}
 			&:hover {
   				opacity: 0.6;
@@ -254,12 +254,15 @@ nav {
 		#mainImage{
 			width: 100%;
 			height:320px;
-			background-color: black;
+			background: url(../images/picture1.jpg) no-repeat;
+			background-size: 100% 100%;
 			p{
 				position: relative;
-				top: 265px;
+				top: 261px;
 				left:10px;
 				color: #b70052;
+				font-weight: bold;
+				font-size: 1.3em;
 				display: block;
 				width: 200px;
 				padding: 10px;
@@ -268,23 +271,91 @@ nav {
 		}
 		#galleryImages{
 			width:100%;
-			height: 100px;
+			height: 103px;
 			margin: 20px 0;
 			overflow-y: hidden;
-			overflow-x: scroll; 
-			background-color: red;
+			overflow-x: scroll;
 			#imageContainer{
 				width: 1010px;
 				a{	
 					display: inline-block;
-					width:175px;
+					width:170px;
 					height:100px;
-					background-color: blue;
 					margin-right: 30px;
+					text-indent: -99999px;
 					&:last-child{
 						margin-right: 0px;
 					}
 				}
+				.overlay{
+					width:100%;
+					height:100%;
+				}
+
+
+				.image1{
+					background: url(../images/picture1_thumb_norm.jpg);
+					&:hover{
+						background: url(../images/picture1_thumb.jpg);
+					}
+					.current{
+						background: url(../images/picture1_thumb.jpg);
+					&:hover{
+							cursor:default;
+						}	
+					}
+				}
+				
+				.image2{
+					background: url(../images/picture2_thumb_norm.jpg);
+					&:hover{
+						background: url(../images/picture2_thumb.jpg);
+					}
+					.current{
+						background: url(../images/picture2_thumb.jpg);
+					&:hover{
+							cursor:default;
+						}	
+					}
+				}
+				.image3{
+					background: url(../images/picture3_thumb_norm.jpg);
+					&:hover{
+						background: url(../images/picture3_thumb.jpg);
+					}
+					.current{
+						background: url(../images/picture3_thumb.jpg);
+					&:hover{
+							cursor:default;
+						}	
+					}
+				}
+				.image4{
+					background: url(../images/picture4_thumb_norm.jpg);
+					&:hover{
+						background: url(../images/picture4_thumb.jpg);
+					}
+					.current{
+						background: url(../images/picture4_thumb.jpg);
+					&:hover{
+							cursor:default;
+						}	
+					}
+				}
+				.image5{
+					background: url(../images/picture5_thumb_norm.jpg);
+					&:hover{
+						background: url(../images/picture5_thumb.jpg);
+					}
+					.current{
+						background: url(../images/picture5_thumb.jpg);
+					&:hover{
+							cursor:default;
+						}	
+					}
+				}
+
+
 			}
 		}
 
@@ -311,16 +382,21 @@ nav {
 		width:25%;
 		height: auto;
 		overflow: hidden;
-		background-color: yellow;
 		display: inline-block;
 		h2{
 			margin-bottom: 20px;
 		}
 		a{
 			display: block;
-			width:270px;
-			height:160px;
-			background-color: blue;
+			width:100%;
+			max-width: 270px;
+			height:166px;
+			background: url(../images/video_norm.jpg);
+			background-size: 100% 100%;
+			&:hover{
+				background: url(../images/video.jpg);
+				background-size: 100% 100%;
+			}
 		}
 	}
 }
@@ -356,5 +432,74 @@ nav {
   		font-family: "Helvetica Neue",Helvetica,Arial, "Lucida Grande", sans-serif;
   		cursor: pointer;
   		-webkit-appearance: none;
+	}
+}
+
+/* Media Queries */
+
+
+
+@media only screen and (min-width : 768px) and (max-width : 1025px) {
+	
+	.container{
+		width:100%;
+	}
+
+	nav {
+  		background-color: blue;
+  		#navLinks {
+  			display:block;
+  			width: 484px;
+		}
+	}
+
+	footer{	
+		section{
+			height:140px;
+			width:450px;
+		}
+	}
+}
+
+@media only screen and (max-width : 480px){
+	.container{
+		width:100%;
+
+	}
+
+	.logo{ 
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+
+	nav {
+  		#socialMedia {
+  			display:none;
+		}
+	}
+	footer{	
+		border-top: none;
+		.logo{
+			border-right: none;	
+			margin: 0 auto;
+		}
+		section{
+			float: none;
+			width:100%;
+			#footerLinks{
+				width: 100%;
+				.links{
+					display: none;
+				}
+				li{
+					p{
+						text-align: center;
+						margin-top:0;
+						font-size: .5em;
+					}
+				}
+			}
+		}
 	}
 }

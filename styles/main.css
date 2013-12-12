@@ -264,7 +264,7 @@ nav #navLinks li a {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.3em;
-  padding: 25px 15px 5px 5px;
+  padding: 25px 5px 5px 5px;
 }
 nav #navLinks li:hover {
   opacity: 0.6;
@@ -273,13 +273,16 @@ nav #navLinks li:hover {
 #wrapper #gallery #mainImage {
   width: 100%;
   height: 320px;
-  background-color: black;
+  background: url(../images/picture1.jpg) no-repeat;
+  background-size: 100% 100%;
 }
 #wrapper #gallery #mainImage p {
   position: relative;
-  top: 265px;
+  top: 261px;
   left: 10px;
   color: #b70052;
+  font-weight: bold;
+  font-size: 1.3em;
   display: block;
   width: 200px;
   padding: 10px;
@@ -287,24 +290,87 @@ nav #navLinks li:hover {
 }
 #wrapper #gallery #galleryImages {
   width: 100%;
-  height: 100px;
+  height: 103px;
   margin: 20px 0;
   overflow-y: hidden;
   overflow-x: scroll;
-  background-color: red;
 }
 #wrapper #gallery #galleryImages #imageContainer {
   width: 1010px;
 }
 #wrapper #gallery #galleryImages #imageContainer a {
   display: inline-block;
-  width: 175px;
+  width: 170px;
   height: 100px;
-  background-color: blue;
   margin-right: 30px;
+  text-indent: -99999px;
 }
 #wrapper #gallery #galleryImages #imageContainer a:last-child {
   margin-right: 0px;
+}
+#wrapper #gallery #galleryImages #imageContainer .overlay {
+  width: 100%;
+  height: 100%;
+}
+#wrapper #gallery #galleryImages #imageContainer .image1 {
+  background: url(../images/picture1_thumb_norm.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image1:hover {
+  background: url(../images/picture1_thumb.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image1 .current {
+  background: url(../images/picture1_thumb.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image1 .current:hover {
+  cursor: default;
+}
+#wrapper #gallery #galleryImages #imageContainer .image2 {
+  background: url(../images/picture2_thumb_norm.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image2:hover {
+  background: url(../images/picture2_thumb.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image2 .current {
+  background: url(../images/picture2_thumb.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image2 .current:hover {
+  cursor: default;
+}
+#wrapper #gallery #galleryImages #imageContainer .image3 {
+  background: url(../images/picture3_thumb_norm.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image3:hover {
+  background: url(../images/picture3_thumb.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image3 .current {
+  background: url(../images/picture3_thumb.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image3 .current:hover {
+  cursor: default;
+}
+#wrapper #gallery #galleryImages #imageContainer .image4 {
+  background: url(../images/picture4_thumb_norm.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image4:hover {
+  background: url(../images/picture4_thumb.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image4 .current {
+  background: url(../images/picture4_thumb.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image4 .current:hover {
+  cursor: default;
+}
+#wrapper #gallery #galleryImages #imageContainer .image5 {
+  background: url(../images/picture5_thumb_norm.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image5:hover {
+  background: url(../images/picture5_thumb.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image5 .current {
+  background: url(../images/picture5_thumb.jpg);
+}
+#wrapper #gallery #galleryImages #imageContainer .image5 .current:hover {
+  cursor: default;
 }
 #wrapper #info {
   float: left;
@@ -327,7 +393,6 @@ nav #navLinks li:hover {
   width: 25%;
   height: auto;
   overflow: hidden;
-  background-color: yellow;
   display: inline-block;
 }
 #wrapper #video h2 {
@@ -335,9 +400,15 @@ nav #navLinks li:hover {
 }
 #wrapper #video a {
   display: block;
-  width: 270px;
-  height: 160px;
-  background-color: blue;
+  width: 100%;
+  max-width: 270px;
+  height: 166px;
+  background: url(../images/video_norm.jpg);
+  background-size: 100% 100%;
+}
+#wrapper #video a:hover {
+  background: url(../images/video.jpg);
+  background-size: 100% 100%;
 }
 /* Contact */
 .formgroup {
@@ -371,4 +442,56 @@ nav #navLinks li:hover {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   cursor: pointer;
   -webkit-appearance: none;
+}
+/* Media Queries */
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .container {
+    width: 100%;
+  }
+  nav {
+    background-color: blue;
+  }
+  nav #navLinks {
+    display: block;
+    width: 484px;
+  }
+  footer section {
+    height: 140px;
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  .logo {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  nav #socialMedia {
+    display: none;
+  }
+  footer {
+    border-top: none;
+  }
+  footer .logo {
+    border-right: none;
+    margin: 0 auto;
+  }
+  footer section {
+    float: none;
+    width: 100%;
+  }
+  footer section #footerLinks {
+    width: 100%;
+  }
+  footer section #footerLinks .links {
+    display: none;
+  }
+  footer section #footerLinks li p {
+    text-align: center;
+    margin-top: 0;
+    font-size: .5em;
+  }
 }

@@ -13,7 +13,7 @@
           <li><a href="index.php">Home</a></li>
           <li><a href="about.php">About Us</a></li>
           <li><a href="programs.php">Programs & Services</a></li>
-          <li><a href="supporters.php">Our Supporters</a></li>
+          <li><a href="supporters.php">Supporters</a></li>
         </ul>
       </nav>
     </div>

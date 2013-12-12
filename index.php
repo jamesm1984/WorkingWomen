@@ -11,14 +11,14 @@
         </div>
         <div id="galleryImages">
           <div id="imageContainer">
-            <a href="#1"><img src="" alt="picture"></a>
-            <a href="#2"><img src="" alt="picture"></a>
-            <a href="#3"><img src="" alt="picture"></a>
-            <a href="#4"><img src="" alt="picture"></a>
-            <a href="#5"><img src="" alt="picture"></a>
+            <a class="image1" href="#1"><div id="image1Overlay" class="overlay current"></div></a>
+            <a class="image2" href="#2"><div id="image2Overlay" class="overlay"></div></a>
+            <a class="image3" href="#3"><div id="image3Overlay" class="overlay"></div></a>
+            <a class="image4" href="#4"><div id="image4Overlay" class="overlay"></div></a>
+            <a class="image5" href="#5"><div id="image5Overlay" class="overlay"></div></a>
           </div>
         </div>
-      </section>
+      </section> 
 
       <section id="info">
         <h2>35 years of working women</h2>
@@ -28,7 +28,7 @@
         <h3>VICTORIA VILLAGE CRAFT SHOW @ the Victoria Park Hub - August 7th.</h3>
         <p>Join fellow craft enthusiasts from community groups supported by WWCC as local craft stars host the first ever Victoria Village Craft Show. Our Hub’s very own Sewing Club, Knitting Club and Chinese Seniors Help Circle will be exhibiting their beautiful crafty creations this Friday, Aug, 9 at 1527 Victoria Park Ave. 1:00 – 4:00PM.</p>
         <h3>Celebration of community projects by 20 youth in GTA next weekend - July 4th</h3>
-        <p><a href="#">http://yfile.news.yorku.ca/2013/06/28/symopsium-to-celebrate-community-projects-by-20-youth-in-gta/</a></p>
+        <p><a href="http://yfile.news.yorku.ca/2013/06/28/symopsium-to-celebrate-community-projects-by-20-youth-in-gta/" target="_blank">http://yfile.news.yorku.ca/2013/06/28/symopsium-to-celebrate-community-projects-by-20-youth-in-gta/</a></p>
         <h3>WORKSHOP: Free Creative Mind-body Retreat - June 26th</h3>
         <p>Yoga & Expressive Arts Join us any Wednesday July 3rd & July 10th, 2013 From 10:00 a.m. to 12:00 p.m. Working Women Community Centre 533C Gladstone Ave. (Main intersection Bloor & Dufferin) For more info:   416 532 28 24</p>
       </section>

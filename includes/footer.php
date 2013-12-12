@@ -4,13 +4,13 @@
       <section>
       	<ul id="footerLinks">
       		<li>
-      			<ul>
+      			<ul class="links">
       				<li><a href="#">Home</a></li>
       				<li><a href="#">Contact Us</a></li>
       			</ul>
       		</li>
       		<li>
-      			<ul>
+      			<ul class="links">
       				<li><a href="#">Careers</a></li>
       				<li><a href="#">Helpful Resources</a></li>
       				<li><a href="#">Privacy/Term</a></li>
