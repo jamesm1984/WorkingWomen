@@ -121,7 +121,7 @@ header section #signupContainer textarea {
   float: none;
   margin-top: 20px;
   height: 30px;
-  width: 175px;
+  width: 165px;
   font-size: 24px;
   resize: none;
   border: 2px black solid;
@@ -131,7 +131,7 @@ header section #signupContainer #signup {
   float: right;
   width: 81px;
   height: 33px;
-  margin-top: 18px;
+  margin-top: -34px;
   display: inline-block;
   background-image: url(../images/signUp.png);
 }
@@ -663,7 +663,8 @@ footer section #footerLinks li p a {
   width: 35%;
   display: inline-block;
   height: 499px;
-  background: #000000 url(../images/womenInSuit.jpg);
+  background: url(../images/womenInSuit.jpg);
+  background-repeat: no-repeat;
 }
 /* Thank you */
 #wrapper .mainContent h1,
@@ -717,6 +718,7 @@ footer section #footerLinks li p a {
     width: 100%;
     height: 46px;
     z-index: 10;
+    cursor: pointer;
   }
   #headerContainer #mobileNav img {
     position: absolute;
@@ -790,7 +792,7 @@ footer section #footerLinks li p a {
   }
   header section #signupContainer #signup {
     position: absolute;
-    top: -5px;
+    top: 45px;
     right: 10px;
   }
   /** index.php **/

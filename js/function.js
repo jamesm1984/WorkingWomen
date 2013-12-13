@@ -6,7 +6,7 @@ $(document).ready(function(){
 	$("#mobileNav").click(function(){
 		$("nav").slideToggle(500);
 	});
-	$("#volunteerPositions").click(function(){
+	$("#headerBarV").click(function(){
 		if (jobState==="jobs"){
 			$("#ledgendV").removeClass("hidden");
 			$("#jobListingsV").removeClass("hidden");
@@ -20,9 +20,16 @@ $(document).ready(function(){
 			$("#indicatorV").css("margin","5px 20px");
 
 			jobState="volunteer";
+		} else if (jobState==="volunteer"){
+			$("#ledgendV").addClass("hidden");
+			$("#jobListingsV").addClass("hidden");
+
+			$("#indicatorV").css("background-Image","url(../images/arrow.png)");
+			$("#indicatorV").css("margin","15px 10px");
+
 		}
 	});
-	$("#jobPositions").click(function(){
+	$("#headerBarJ").click(function(){
 		if (jobState==="volunteer"){
 			$("#ledgendV").addClass("hidden");
 			$("#jobListingsV").addClass("hidden");
@@ -36,6 +43,12 @@ $(document).ready(function(){
 			$("#indicatorV").css("margin","15px 10px");
 
 			jobState = "jobs";
+		} else if (jobState==="jobs"){
+			$("#ledgendJ").addClass("hidden");
+			$("#jobListingsJ").addClass("hidden");
+
+			$("#indicatorJ").css("background-Image","url(../images/arrow.png)");
+			$("#indicatorJ").css("margin","15px 10px");
 		}
 	});
 	$(".image1").click(function(){
