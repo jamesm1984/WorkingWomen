@@ -1,5 +1,6 @@
 var jobState = "jobs";
 var currentImage = "image1";
+var imageText=["Image 1","Image 2","Image 5","Image 5","Image 5"];
 
 $(document).ready(function(){
 	$("#mobileNav").click(function(){
@@ -44,7 +45,7 @@ $(document).ready(function(){
 			$("#image4Overlay").removeClass("current");
 			$("#image5Overlay").removeClass("current");
 			$("#image1Overlay").addClass("current");
-			document.getElementById("overLayText").innerHTML="Image 1";
+			document.getElementById("overLayText").innerHTML=imageText[0];
 			$("#mainImage").css("background","url(/images/picture1.jpg)");
 			$("#mainImage").css("background-size","100% 100%");
 			currentImage = "image1";
@@ -57,7 +58,7 @@ $(document).ready(function(){
 			$("#image4Overlay").removeClass("current");
 			$("#image5Overlay").removeClass("current");
 			$("#image2Overlay").addClass("current");
-			document.getElementById("overLayText").innerHTML="Image 2";
+			document.getElementById("overLayText").innerHTML=imageText[1];
 			$("#mainImage").css("background","url(/images/picture2.jpg)");
 			$("#mainImage").css("background-size","100% 100%");
 			currentImage = "image2";
@@ -70,7 +71,7 @@ $(document).ready(function(){
 			$("#image4Overlay").removeClass("current");
 			$("#image5Overlay").removeClass("current");
 			$("#image3Overlay").addClass("current");
-			document.getElementById("overLayText").innerHTML="Image 3";
+			document.getElementById("overLayText").innerHTML=imageText[2];
 			$("#mainImage").css("background","url(/images/picture3.jpg)");
 			$("#mainImage").css("background-size","100% 100%");
 			currentImage = "image3";
@@ -83,7 +84,7 @@ $(document).ready(function(){
 			$("#image3Overlay").removeClass("current");
 			$("#image5Overlay").removeClass("current");
 			$("#image4Overlay").addClass("current");
-			document.getElementById("overLayText").innerHTML="Image 4";
+			document.getElementById("overLayText").innerHTML=imageText[3];
 			$("#mainImage").css("background","url(/images/picture4.jpg)");
 			$("#mainImage").css("background-size","100% 100%");
 			currentImage = "image4";
@@ -96,7 +97,7 @@ $(document).ready(function(){
 			$("#image3Overlay").removeClass("current");
 			$("#image4Overlay").removeClass("current");
 			$("#image5Overlay").addClass("current");
-			document.getElementById("overLayText").innerHTML="Image 5";
+			document.getElementById("overLayText").innerHTML=imageText[4];
 			$("#mainImage").css("background","url(/images/picture5.jpg)");
 			$("#mainImage").css("background-size","100% 100%");
 			currentImage = "image5";

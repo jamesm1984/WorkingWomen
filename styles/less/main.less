@@ -612,6 +612,7 @@ footer{
 			display: none;
 			position: relative;
 			max-width:509px;
+			height:318px;
 			border:3px black solid;
 			padding:15px;
 			margin: 0 auto;
@@ -632,14 +633,10 @@ footer{
 					resize:none;
 					font-size: 1.3em;
 				}
-				button{
-					margin-left: 290px;
-					cursor: pointer;
-				}
 			}
 			
 			#r{
-				width: 230px;
+				height: 50px;
 			}
 			.appContainer{
 				width:100%;
@@ -648,7 +645,9 @@ footer{
 			}
 			
 			button{
-				margin-left: 340px;
+				position: absolute;
+				right:55px;
+				margin-top: 20px;
 				cursor: pointer;
 			}
 			
@@ -660,6 +659,27 @@ footer{
 		display: inline-block;
 		height:499px;
 		background: black url(../images/womenInSuit.jpg);
+	}
+}
+
+/* Thank you */
+#wrapper{
+	.mainContent{
+		h1, h2{
+			margin-bottom: 10px;
+		} 
+
+		h3{
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+		p{
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+		h2, h3, p{
+			margin-left: 20px;
+		}
 	}
 }
 
@@ -838,10 +858,78 @@ footer{
 
 	#wrapper{
 		.careers{
+			padding: 0 20px;
 			width:100%;
 			display: block;
+			#volunteerPositions{
+				#ledgendV{
+					height: 35px;
+					p{
+						color: white;
+						font-size: 1em;
+						display: inline-block;
+						width:50%;
+						padding:5px 0 5px 14px;
+						span{
+							padding-left: 40px;
+						}
+					}
+				}
+				#jobListingsV{
+					li{
+						color: white;
+						font-size: 1.2em;
+						display: block;
+						height: 50px;
+						margin: 0;
+						padding: 15px 0;
+						p{
+							display: inline-block;
+							width:50%;
+							padding-left:10px;
+							span{
+								padding-left: 30px;
+							}
+						}
+					}
+				}
+			}
+			#jobPositions{
+				#ledgendJ{
+					height: 35px;
+					p{
+						color: white;
+						font-size: 1em;
+						display: inline-block;
+						width:50%;
+						padding:5px 0 5px 14px;
+						span{
+							padding-left: 40px;
+						}
+					}
+				}
+				#jobListingsJ{
+					li{
+						color: white;
+						font-size: 1.2em;
+						display: block;
+						height: 50px;
+						margin: 0;
+						padding: 15px 0;
+						p{
+							display: inline-block;
+							width:50%;
+							padding-left:10px;
+							span{
+								padding-left: 30px;
+							}
+						}
+					}
+				}
+			}
 			#application{
 				width: 100%;
+				height:350px;
 				margin-bottom: 20px;
 				h2{
 					margin: 10px 0;
@@ -849,38 +937,48 @@ footer{
 				p{
 					position: relative;
 					width: 100%;
-					margin: 0 10px 0 0;
 					display: inline-block;
 					textarea{
 						position: absolute;
 						left:100px;
-						width:185px;
-						margin-bottom: -8px;
-						display: inline-block;
-					}
-					button{
-						position: absolute;
-						right:0px;
-						bottom: -5px
+						width:145px;
 					}
 				}
 				.appContainer{
 					width:100%;
 					padding: 0;
 				}
-				#r{
-					width: 110px;
-				}
 				button{
-					margin-left: 230px;
+					right:15px;
 				}
 			}
 		}
-		aside{
-			width:100%;
+		#sideImage{
 			display: none;
 		}
 	}
+	
+	#wrapper{
+	.mainContent{
+		padding: 0 20px;
+		h1, h2{
+			margin-bottom: 10px;
+		} 
+
+		h3{
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+		p{
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+		h2, h3, p{
+			margin-left: 20px;
+		}
+	}
+}
+
 
 	footer{	
 		border-top: none;

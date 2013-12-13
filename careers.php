@@ -55,7 +55,7 @@
             <div class="appContainer"><p>First Name<textarea id="fn" name="fn"></textarea></p></div>
             <div class="appContainer"><p>Last Name<textarea id="ln" name="ln"></textarea></p></div>
             <div class="appContainer"><p>Email Adress<textarea  id="ea" name="ea"></textarea></p></div>
-            <div class="appContainer"><p>Resume<textarea id="r" name="r"></textarea><button id="rButton">Browse</button></p></div>
+            <div class="appContainer"><p>Resume<textarea id="r" name="r"></textarea></p></div>
             <button id="submit">Submit</button>
           </form>
         </section>

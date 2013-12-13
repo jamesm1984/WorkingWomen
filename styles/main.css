@@ -1,4 +1,17 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@font-face {
+  font-family: 'nobileregular';
+  src: url('nobile-regular-webfont.eot');
+  src: url('nobile-regular-webfont.eot?#iefix') format('embedded-opentype'), url('nobile-regular-webfont.woff') format('woff'), url('nobile-regular-webfont.ttf') format('truetype'), url('nobile-regular-webfont.svg#nobileregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'source_sans_proregular';
+  src: url('sourcesanspro-regular-webfont.eot');
+  src: url('sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'), url('sourcesanspro-regular-webfont.woff') format('woff'), url('sourcesanspro-regular-webfont.ttf') format('truetype'), url('sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 a:link {
   color: #000000;
   text-decoration: none;
@@ -19,7 +32,7 @@ p {
 h1,
 h2,
 h4 {
-  font-family: "Montserrat", "Times New Roman", Georgia, Serif;
+  font-family: "nobileregular", "Times New Roman", Georgia, Serif;
   font-weight: 700;
   line-height: 1em;
   text-transform: uppercase;
@@ -31,7 +44,7 @@ h2 {
   font-size: 1.8em;
 }
 h3 {
-  font-family: "Times New Roman", Georgia, Serif;
+  font-family: "source_sans_proregular", Arial, Helvetica, sans-serif;
   font-size: 1.3em;
   line-height: 1em;
 }
@@ -45,7 +58,7 @@ h4 {
 }
 body {
   width: 100%;
-  font-family: "Times New Roman", Georgia, Serif;
+  font-family: "source_sans_proregular", Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 300;
   color: #ffffff;
@@ -608,6 +621,7 @@ footer section #footerLinks li p a {
   display: none;
   position: relative;
   max-width: 509px;
+  height: 318px;
   border: 3px black solid;
   padding: 15px;
   margin: 0 auto;
@@ -630,12 +644,8 @@ footer section #footerLinks li p a {
   resize: none;
   font-size: 1.3em;
 }
-#wrapper .careers #application p button {
-  margin-left: 290px;
-  cursor: pointer;
-}
 #wrapper .careers #application #r {
-  width: 230px;
+  height: 50px;
 }
 #wrapper .careers #application .appContainer {
   width: 100%;
@@ -643,7 +653,9 @@ footer section #footerLinks li p a {
   padding-left: 40px;
 }
 #wrapper .careers #application button {
-  margin-left: 340px;
+  position: absolute;
+  right: 55px;
+  margin-top: 20px;
   cursor: pointer;
 }
 #wrapper #sideImage {
@@ -652,6 +664,24 @@ footer section #footerLinks li p a {
   display: inline-block;
   height: 499px;
   background: #000000 url(../images/womenInSuit.jpg);
+}
+/* Thank you */
+#wrapper .mainContent h1,
+#wrapper .mainContent h2 {
+  margin-bottom: 10px;
+}
+#wrapper .mainContent h3 {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#wrapper .mainContent p {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+#wrapper .mainContent h2,
+#wrapper .mainContent h3,
+#wrapper .mainContent p {
+  margin-left: 20px;
 }
 /* Media Queries */
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
@@ -797,11 +827,71 @@ footer section #footerLinks li p a {
     padding: 0 20px;
   }
   #wrapper .careers {
+    padding: 0 20px;
     width: 100%;
     display: block;
   }
+  #wrapper .careers #volunteerPositions #ledgendV {
+    height: 35px;
+  }
+  #wrapper .careers #volunteerPositions #ledgendV p {
+    color: white;
+    font-size: 1em;
+    display: inline-block;
+    width: 50%;
+    padding: 5px 0 5px 14px;
+  }
+  #wrapper .careers #volunteerPositions #ledgendV p span {
+    padding-left: 40px;
+  }
+  #wrapper .careers #volunteerPositions #jobListingsV li {
+    color: white;
+    font-size: 1.2em;
+    display: block;
+    height: 50px;
+    margin: 0;
+    padding: 15px 0;
+  }
+  #wrapper .careers #volunteerPositions #jobListingsV li p {
+    display: inline-block;
+    width: 50%;
+    padding-left: 10px;
+  }
+  #wrapper .careers #volunteerPositions #jobListingsV li p span {
+    padding-left: 30px;
+  }
+  #wrapper .careers #jobPositions #ledgendJ {
+    height: 35px;
+  }
+  #wrapper .careers #jobPositions #ledgendJ p {
+    color: white;
+    font-size: 1em;
+    display: inline-block;
+    width: 50%;
+    padding: 5px 0 5px 14px;
+  }
+  #wrapper .careers #jobPositions #ledgendJ p span {
+    padding-left: 40px;
+  }
+  #wrapper .careers #jobPositions #jobListingsJ li {
+    color: white;
+    font-size: 1.2em;
+    display: block;
+    height: 50px;
+    margin: 0;
+    padding: 15px 0;
+  }
+  #wrapper .careers #jobPositions #jobListingsJ li p {
+    display: inline-block;
+    width: 50%;
+    padding-left: 10px;
+  }
+  #wrapper .careers #jobPositions #jobListingsJ li p span {
+    padding-left: 30px;
+  }
   #wrapper .careers #application {
     width: 100%;
+    height: 350px;
     margin-bottom: 20px;
   }
   #wrapper .careers #application h2 {
@@ -810,34 +900,42 @@ footer section #footerLinks li p a {
   #wrapper .careers #application p {
     position: relative;
     width: 100%;
-    margin: 0 10px 0 0;
     display: inline-block;
   }
   #wrapper .careers #application p textarea {
     position: absolute;
     left: 100px;
-    width: 185px;
-    margin-bottom: -8px;
-    display: inline-block;
-  }
-  #wrapper .careers #application p button {
-    position: absolute;
-    right: 0px;
-    bottom: -5px;
+    width: 145px;
   }
   #wrapper .careers #application .appContainer {
     width: 100%;
     padding: 0;
   }
-  #wrapper .careers #application #r {
-    width: 110px;
-  }
   #wrapper .careers #application button {
-    margin-left: 230px;
+    right: 15px;
   }
-  #wrapper aside {
-    width: 100%;
+  #wrapper #sideImage {
     display: none;
+  }
+  #wrapper .mainContent {
+    padding: 0 20px;
+  }
+  #wrapper .mainContent h1,
+  #wrapper .mainContent h2 {
+    margin-bottom: 10px;
+  }
+  #wrapper .mainContent h3 {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  #wrapper .mainContent p {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  #wrapper .mainContent h2,
+  #wrapper .mainContent h3,
+  #wrapper .mainContent p {
+    margin-left: 20px;
   }
   footer {
     border-top: none;
