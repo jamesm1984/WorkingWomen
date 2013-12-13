@@ -199,6 +199,7 @@ footer section #footerLinks li p a {
 #headerContainer #socialMedia {
   display: block;
   width: 100%;
+  margin: -15px 0 -6px 0;
   margin-right: 25px;
 }
 #headerContainer #socialMedia li {
@@ -241,8 +242,7 @@ footer section #footerLinks li p a {
 #headerContainer #socialMedia li:first-child {
   display: block;
   height: 20px;
-  margin-top: -15px;
-  margin-bottom: 5px;
+  margin: 5px 0px 5px 0;
 }
 #headerContainer #socialMedia li:first-child p {
   position: relative;
@@ -257,6 +257,7 @@ footer section #footerLinks li p a {
   display: block;
   width: 100%;
   margin-right: 25px;
+  z-index: 10;
 }
 #headerContainer nav #navLinks li {
   display: inline-block;
@@ -413,38 +414,244 @@ footer section #footerLinks li p a {
   background: url(../images/video.jpg);
   background-size: 100% 100%;
 }
-/* Contact */
-.formgroup {
-  margin: 15px 0px;
-}
-.formgroup label {
+/* Volunteer */
+#wrapper .volunteer #volunteerImage {
   display: block;
-  font-weight: 500;
+  width: 100%;
+  height: 318px;
+  background: url(../images/volunteerBigImage.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+#wrapper .volunteer h2 {
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+#wrapper .volunteer a {
+  margin-top: 10px;
+  text-decoration: none;
+}
+/* careers */
+.hidden {
+  display: none;
+}
+#wrapper .careers {
+  float: left;
+  width: 65%;
+}
+#wrapper .careers h2 {
+  margin-bottom: 20px;
+}
+#wrapper .careers P {
+  margin-bottom: 60px;
+}
+#wrapper .careers #volunteerPositions {
+  width: 100%;
+  max-height: 475px;
+  background-color: #b70052;
+  overflow: hidden;
+  cursor: pointer;
+}
+#wrapper .careers #volunteerPositions #headerBarV {
+  position: relative;
+  height: 60px;
+  border: 2px black solid;
+}
+#wrapper .careers #volunteerPositions #headerBarV #indicatorV {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  margin: 15px 10px;
+}
+#wrapper .careers #volunteerPositions #headerBarV p {
+  color: white;
+  font-size: 1.5em;
+  position: absolute;
+  left: 70px;
+  top: 10px;
+  display: inline-block;
+}
+#wrapper .careers #volunteerPositions #ledgendV {
+  height: 35px;
+}
+#wrapper .careers #volunteerPositions #ledgendV p {
+  color: white;
+  font-size: 1em;
+  display: inline-block;
+  width: 50%;
+  padding: 5px 0 5px 14px;
+}
+#wrapper .careers #volunteerPositions #ledgendV p span {
+  padding-left: 90px;
+}
+#wrapper .careers #volunteerPositions #jobListingsV {
+  border: 3px black solid;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#wrapper .careers #volunteerPositions #jobListingsV li {
+  color: white;
+  font-size: 1.2em;
+  display: block;
+  height: 50px;
+  margin: 0;
+  padding: 15px 0;
+}
+#wrapper .careers #volunteerPositions #jobListingsV li p {
+  display: inline-block;
+  width: 50%;
+  padding-left: 10px;
+}
+#wrapper .careers #volunteerPositions #jobListingsV li p span {
+  padding-left: 80px;
+}
+#wrapper .careers #volunteerPositions #jobListingsV li button {
+  float: right;
+  display: inline-block;
+  margin: 0 10px;
+  width: 25%;
+  cursor: pointer;
+}
+#wrapper .careers #volunteerPositions #jobListingsV li:nth-child(odd) {
+  background: #d3d1d1;
+  color: #b70052;
   font-size: 1.2em;
 }
-.formgroup input[type="text"],
-.formgroup textarea {
-  display: block;
-  padding: 10px 5px;
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #fff;
-  background-image: none;
-  font-size: 1em;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+#wrapper .careers #volunteerPositions #jobListingsV li:nth-child(even) {
+  border: 3px gray solid;
 }
-.formgroup .btn {
-  display: inline-block;
-  margin-bottom: 0;
-  padding: 6px 12px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  text-align: center;
-  font-size: 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+#wrapper .careers #jobPositions {
+  width: 100%;
+  max-height: 475px;
+  background-color: #b70052;
+  margin-bottom: 20px;
+  overflow: hidden;
   cursor: pointer;
-  -webkit-appearance: none;
+}
+#wrapper .careers #jobPositions #headerBarJ {
+  position: relative;
+  height: 60px;
+  border: 2px black solid;
+}
+#wrapper .careers #jobPositions #headerBarJ #indicatorJ {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/arrow_down.png);
+  background-repeat: no-repeat;
+  margin: 5px 20px;
+}
+#wrapper .careers #jobPositions #headerBarJ p {
+  color: white;
+  font-size: 1.5em;
+  position: absolute;
+  left: 70px;
+  top: 10px;
+  display: inline-block;
+}
+#wrapper .careers #jobPositions #ledgendJ {
+  height: 35px;
+}
+#wrapper .careers #jobPositions #ledgendJ p {
+  color: white;
+  font-size: 1em;
+  display: inline-block;
+  width: 50%;
+  padding: 5px 0 5px 14px;
+}
+#wrapper .careers #jobPositions #ledgendJ p span {
+  padding-left: 90px;
+}
+#wrapper .careers #jobPositions #jobListingsJ {
+  border: 3px black solid;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#wrapper .careers #jobPositions #jobListingsJ li {
+  color: white;
+  font-size: 1.2em;
+  display: block;
+  height: 50px;
+  margin: 0;
+  padding: 15px 0;
+}
+#wrapper .careers #jobPositions #jobListingsJ li p {
+  display: inline-block;
+  width: 50%;
+  padding-left: 10px;
+}
+#wrapper .careers #jobPositions #jobListingsJ li p span {
+  padding-left: 80px;
+}
+#wrapper .careers #jobPositions #jobListingsJ li button {
+  float: right;
+  display: inline-block;
+  margin: 0 10px;
+  width: 25%;
+  cursor: pointer;
+}
+#wrapper .careers #jobPositions #jobListingsJ li:nth-child(odd) {
+  background: #d3d1d1;
+  color: #b70052;
+  font-size: 1.2em;
+}
+#wrapper .careers #jobPositions #jobListingsJ li:nth-child(odd) p {
+  padding-left: 12px;
+}
+#wrapper .careers #jobPositions #jobListingsJ li:nth-child(even) {
+  border: 3px gray solid;
+}
+#wrapper .careers #application {
+  display: none;
+  position: relative;
+  max-width: 509px;
+  border: 3px black solid;
+  padding: 15px;
+  margin: 0 auto;
+}
+#wrapper .careers #application h2 {
+  margin-bottom: 20px;
+}
+#wrapper .careers #application p {
+  width: 100%;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+#wrapper .careers #application p textarea {
+  position: absolute;
+  left: 150px;
+  width: 300px;
+  height: 20px;
+  margin-bottom: -8px;
+  display: inline-block;
+  resize: none;
+  font-size: 1.3em;
+}
+#wrapper .careers #application p button {
+  margin-left: 290px;
+  cursor: pointer;
+}
+#wrapper .careers #application #r {
+  width: 230px;
+}
+#wrapper .careers #application .appContainer {
+  width: 100%;
+  height: 50px;
+  padding-left: 40px;
+}
+#wrapper .careers #application button {
+  margin-left: 340px;
+  cursor: pointer;
+}
+#wrapper #sideImage {
+  float: left;
+  width: 35%;
+  display: inline-block;
+  height: 499px;
+  background: #000000 url(../images/womenInSuit.jpg);
 }
 /* Media Queries */
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
@@ -478,22 +685,22 @@ footer section #footerLinks li p a {
     left: 0px;
     display: block;
     width: 100%;
-    height: 75px;
-    z-index: 120;
+    height: 46px;
+    z-index: 10;
   }
   #headerContainer #mobileNav img {
     position: absolute;
-    top: 30px;
+    top: 15px;
     left: 20px;
   }
   #headerContainer #mobileNav p {
     position: absolute;
-    top: 25px;
+    top: 10px;
     left: 40px;
   }
   #headerContainer nav {
     position: absolute;
-    top: 64px;
+    top: 40px;
     left: 0px;
     display: none;
     height: auto;
@@ -519,6 +726,7 @@ footer section #footerLinks li p a {
   header section {
     position: relative;
     top: 120px;
+    height: 50px;
     margin-bottom: 110px;
     overflow: visible;
   }
@@ -539,7 +747,7 @@ footer section #footerLinks li p a {
     top: -65px;
     left: 0px;
     width: 100%;
-    border-top: 2px black solid;
+    border-top: 1px black solid;
   }
   header section #signupContainer p {
     display: none;
@@ -555,6 +763,15 @@ footer section #footerLinks li p a {
     top: -5px;
     right: 10px;
   }
+  /** index.php **/
+  #wrapper #gallery #mainImage {
+    height: 105px;
+  }
+  #wrapper #gallery #mainImage p {
+    left: 0px;
+    top: 71px;
+    padding: 2.5px;
+  }
   #wrapper #info {
     float: none;
     width: 100%;
@@ -566,6 +783,61 @@ footer section #footerLinks li p a {
     width: 270px;
     display: block;
     margin: 0 auto;
+  }
+  #wrapper .volunteer #volunteerImage {
+    height: 105px;
+  }
+  #wrapper .volunteer h2 {
+    padding: 0 20px;
+  }
+  #wrapper .volunteer p {
+    padding: 0 20px;
+  }
+  #wrapper .volunteer a {
+    padding: 0 20px;
+  }
+  #wrapper .careers {
+    width: 100%;
+    display: block;
+  }
+  #wrapper .careers #application {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #wrapper .careers #application h2 {
+    margin: 10px 0;
+  }
+  #wrapper .careers #application p {
+    position: relative;
+    width: 100%;
+    margin: 0 10px 0 0;
+    display: inline-block;
+  }
+  #wrapper .careers #application p textarea {
+    position: absolute;
+    left: 100px;
+    width: 185px;
+    margin-bottom: -8px;
+    display: inline-block;
+  }
+  #wrapper .careers #application p button {
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+  }
+  #wrapper .careers #application .appContainer {
+    width: 100%;
+    padding: 0;
+  }
+  #wrapper .careers #application #r {
+    width: 110px;
+  }
+  #wrapper .careers #application button {
+    margin-left: 230px;
+  }
+  #wrapper aside {
+    width: 100%;
+    display: none;
   }
   footer {
     border-top: none;

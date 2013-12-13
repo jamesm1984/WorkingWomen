@@ -175,6 +175,7 @@ footer{
 	#socialMedia {
   		display:block;
   		width:100%;
+  		margin: -15px 0 -6px 0;
  		margin-right: 25px;
   		li{
   			display: inline-block;
@@ -213,8 +214,7 @@ footer{
 		li:first-child{
 			display: block;
 			height:20px;
-			margin-top: -15px;
-			margin-bottom: 5px;
+			margin: 5px 0px 5px 0;
 			p{
   				position: relative;
   				top:0px;
@@ -227,11 +227,11 @@ footer{
 		display: none;	
 	}
 	nav {
-  		
   		#navLinks {
   			display:block;
   			width: 100%;
   			margin-right: 25px;
+  			z-index: 10;
   			li{
   				display: inline-block;
   				a {
@@ -404,37 +404,262 @@ footer{
 	}
 }
 
-/* Contact */
+/* Volunteer */
 
-.formgroup {
-  	margin: 15px 0px;
-  	label {
-  		display: block;
-  		font-weight: 500;
-  		font-size: 1.2em;
-  	}
-  	input[type="text"], textarea {
-    	display: block;
-    	padding: 10px 5px;
-    	width: 300px;
-    	border: 1px solid #ccc;
-    	border-radius: 4px;
-    	background-color: #fff;
-    	background-image: none;
-    	font-size: 1em;
-    	font-family: "Helvetica Neue",Helvetica,Arial, "Lucida Grande", sans-serif;
+#wrapper{
+	.volunteer{
+		#volunteerImage{
+			display: block;
+			width: 100%;
+			height:318px;
+			background: url(../images/volunteerBigImage.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		h2{
+			margin-top: 60px;
+			margin-bottom: 10px;
+		}
+		P{
+
+		}
+		a{
+			margin-top: 10px;
+			text-decoration: none;
+		}
 	}
-	.btn {
-  		display: inline-block;
-  		margin-bottom: 0;
-  		padding: 6px 12px;
-  		border: 1px solid transparent;
-  		border-radius: 4px;
-  		text-align: center;
-  		font-size: 14px;
-  		font-family: "Helvetica Neue",Helvetica,Arial, "Lucida Grande", sans-serif;
-  		cursor: pointer;
-  		-webkit-appearance: none;
+}
+
+/* careers */
+.hidden{
+	display: none;
+}
+#wrapper{
+	.careers{
+		float: left;
+		width:65%;
+		h2{
+			margin-bottom: 20px;
+		}
+		P{
+			margin-bottom: 60px;
+		}
+		#volunteerPositions{
+			width:100%;
+			max-height: 475px;
+			background-color: #b70052;
+			overflow: hidden;
+			cursor: pointer;
+			#headerBarV{
+				position: relative;
+				height: 60px;
+				border:2px black solid;
+				#indicatorV{
+					display: inline-block;
+					width: 50px;
+					height: 50px;
+					background-image: url(../images/arrow.png);
+					background-repeat: no-repeat;
+					margin: 15px 10px;
+				}
+				p{
+					color: white;
+					font-size: 1.5em;
+					position: absolute;
+					left:70px;
+					top:10px;
+					display: inline-block;
+				}
+			}
+			
+			#ledgendV{
+				height: 35px;
+				p{
+					color: white;
+					font-size: 1em;
+					display: inline-block;
+					width:50%;
+					padding:5px 0 5px 14px;
+					span{
+						padding-left: 90px;
+					}
+				}
+
+			}
+			#jobListingsV{
+				border:3px black solid;
+				height: 300px;
+				overflow-y: scroll;
+				overflow-x: hidden;
+				li{
+					color: white;
+					font-size: 1.2em;
+					display: block;
+					height: 50px;
+					margin: 0;
+					padding: 15px 0;
+					p{
+
+						display: inline-block;
+						width:50%;
+						padding-left:10px;
+						span{
+							padding-left: 80px;
+						}
+					}
+					button{
+						float: right;
+						display: inline-block;
+						margin: 0 10px;
+						width: 25%;
+						cursor: pointer;
+					}
+					&:nth-child(odd) {
+						background: #d3d1d1;
+						color:#b70052;
+						font-size: 1.2em;
+					}
+					&:nth-child(even) {
+						border:3px gray solid;
+					}
+				}
+			}
+		}
+		#jobPositions{
+			width:100%;
+			max-height: 475px;
+			background-color: #b70052;
+			margin-bottom: 20px;
+			overflow: hidden;
+			cursor: pointer;
+			#headerBarJ{
+				position: relative;
+				height: 60px;
+				border:2px black solid;
+				#indicatorJ{
+					display: inline-block;
+					width: 50px;
+					height: 50px;
+					background-image: url(../images/arrow_down.png);
+					background-repeat: no-repeat;
+					margin: 5px 20px;
+				}
+				p{
+					color: white;
+					font-size: 1.5em;
+					position: absolute;
+					left:70px;
+					top:10px;
+					display: inline-block;
+				}
+			}
+			
+			#ledgendJ{
+				height: 35px;
+				p{
+					color: white;
+					font-size: 1em;
+					display: inline-block;
+					width:50%;
+					padding:5px 0 5px 14px;
+					span{
+						padding-left: 90px;
+					}
+				}
+
+			}
+			#jobListingsJ{
+				border:3px black solid;
+				height: 300px;
+				overflow-y: scroll;
+				overflow-x: hidden;
+				li{
+					color: white;
+					font-size: 1.2em;
+					display: block;
+					height: 50px;
+					margin: 0;
+					padding: 15px 0;
+					p{
+						display: inline-block;
+						width:50%;
+						padding-left:10px;
+						span{
+							padding-left: 80px;
+						}
+					}
+					button{
+						float: right;
+						display: inline-block;
+						margin: 0 10px;
+						width: 25%;
+						cursor: pointer;
+					}
+					&:nth-child(odd) {
+						background: #d3d1d1;
+						color:#b70052;
+						font-size: 1.2em;
+						p{
+							padding-left: 12px;
+						}
+					}
+					&:nth-child(even) {
+						border:3px gray solid;
+					}
+				}
+			}
+		}
+		#application{
+			display: none;
+			position: relative;
+			max-width:509px;
+			border:3px black solid;
+			padding:15px;
+			margin: 0 auto;
+			h2{
+				margin-bottom: 20px;
+			}
+			p{
+				width: 100%;
+				margin: 0 10px 0 0;
+				display: inline-block;
+				textarea{
+					position: absolute;
+					left:150px;
+					width:300px;
+					height:20px;
+					margin-bottom: -8px;
+					display: inline-block;
+					resize:none;
+					font-size: 1.3em;
+				}
+				button{
+					margin-left: 290px;
+					cursor: pointer;
+				}
+			}
+			
+			#r{
+				width: 230px;
+			}
+			.appContainer{
+				width:100%;
+				height:50px;
+				padding-left: 40px;
+			}
+			
+			button{
+				margin-left: 340px;
+				cursor: pointer;
+			}
+			
+		}
+	}
+	#sideImage{
+		float: left;
+		width:35%;
+		display: inline-block;
+		height:499px;
+		background: black url(../images/womenInSuit.jpg);
 	}
 }
 
@@ -466,7 +691,6 @@ footer{
 @media only screen and (max-width : 480px){
 	.container{
 		width:100%;
-
 	}
 
 	.logo{ 
@@ -484,92 +708,103 @@ footer{
 			left: 0px;
 			display: block;
   			width:100%;
-			height:75px;
-			z-index: 120;
+			height:46px;
+			z-index: 10;
 			img{
 				position: absolute;
-				top:30px;
+				top:15px;
 				left:20px;
 			}
 			p{
 				position: absolute;
-				top:25px;
+				top:10px;
 				left:40px;
 			}
 		}
-	nav {
-		position: absolute;
-		top:64px;
-		left: 0px;
-  		display: none;
-  		height: auto;
-  		width:100%;
-  		overflow: visible;
-  		#navLinks {
-  			background-color: rgba(0,0,0,0.9);
-  			position: relative;
-  			top:260px;
-  			display:block;
-  			width: 100%;
-  			margin-right: 25px;
-  			padding-bottom: 20px;
-  			li{
-  				display:block;
-  				a{
-  					padding-left:20px;
-  					color: #b70052;
-  				}
-			}
-		}
-	}
-}
-
-	header {
-
-  		
-	section{
-		position: relative;
-		top:120px;
-		margin-bottom:110px;
-		overflow: visible;
-		#donate{
+		nav {
 			position: absolute;
-			top:-135px;
-			left:5px;
-			width: 140px;
-		}
-		#volunteer{
-			position: absolute;
-			top:-135px;
-			right:5px;
-			width:140px;
-		}
-
-		#signupContainer{
-			position: absolute;
-			top:-65px;
+			top:40px;
 			left: 0px;
-			width: 100%;
-			border-top:2px black solid;
-			p{
-				display: none;
-			}
-			textarea{
-				position: absolute;
-				top:-5px;
-				left:15px;
-				float: left;
-			}
-			#signup{
-				position: absolute;
-				top:-5px;
-				right:10px;
+  			display: none;
+  			height: auto;
+  			width:100%;
+  			overflow: visible;
+  			#navLinks {
+  				background-color: rgba(0,0,0,0.9);
+  				position: relative;
+  				top:260px;
+  				display:block;
+  				width: 100%;
+  				margin-right: 25px;
+  				padding-bottom: 20px;
+  				li{
+  					display:block;
+  					a{
+  						padding-left:20px;
+  						color: #b70052;
+  					}
+				}
 			}
 		}
 	}
-}
 
+	header {  		
+		section{
+			position: relative;
+			top:120px;
+			height:50px;
+			margin-bottom:110px;
+			overflow: visible;
+			#donate{
+				position: absolute;
+				top:-135px;
+				left:5px;
+				width: 140px;
+			}
+			#volunteer{
+				position: absolute;
+				top:-135px;
+				right:5px;
+				width:140px;
+			}
+
+			#signupContainer{
+				position: absolute;
+				top:-65px;
+				left: 0px;
+				width: 100%;
+				border-top:1px black solid;
+				p{
+					display: none;
+				}
+				textarea{
+					position: absolute;
+					top:-5px;
+					left:15px;
+					float: left;
+				}
+				#signup{
+					position: absolute;
+					top:-5px;
+					right:10px;
+				}
+			}
+		}
+	}
+
+	/** index.php **/
 	#wrapper{
+		#gallery{
+			#mainImage{
+				height:105px;
+				p{	
+					left: 0px;
+					top:71px;
+					padding: 2.5px;
+				}
+			}
+		}
+
 		#info{
 			float: none;
 			width:100%;
@@ -581,6 +816,69 @@ footer{
 			width: 270px;
 			display: block;
 			margin: 0 auto;
+		}
+	}
+
+	#wrapper{
+		.volunteer{
+			#volunteerImage{
+				height:105px;
+			}
+			h2{
+				padding: 0 20px;
+			}
+			p{
+				padding: 0 20px;
+			}
+			a{
+				padding: 0 20px;
+			}
+		}
+	}
+
+	#wrapper{
+		.careers{
+			width:100%;
+			display: block;
+			#application{
+				width: 100%;
+				margin-bottom: 20px;
+				h2{
+					margin: 10px 0;
+				}
+				p{
+					position: relative;
+					width: 100%;
+					margin: 0 10px 0 0;
+					display: inline-block;
+					textarea{
+						position: absolute;
+						left:100px;
+						width:185px;
+						margin-bottom: -8px;
+						display: inline-block;
+					}
+					button{
+						position: absolute;
+						right:0px;
+						bottom: -5px
+					}
+				}
+				.appContainer{
+					width:100%;
+					padding: 0;
+				}
+				#r{
+					width: 110px;
+				}
+				button{
+					margin-left: 230px;
+				}
+			}
+		}
+		aside{
+			width:100%;
+			display: none;
 		}
 	}
 
@@ -608,4 +906,4 @@ footer{
 			}
 		}
 	}
-}
+}	

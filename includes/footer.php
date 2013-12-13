@@ -5,15 +5,15 @@
       	<ul id="footerLinks">
       		<li>
       			<ul class="links">
-      				<li><a href="#">Home</a></li>
-      				<li><a href="#">Contact Us</a></li>
+      				<li><a href="index.php">Home</a></li>
+      				<li><a href="#ContactUs">Contact Us</a></li>
       			</ul>
       		</li>
       		<li>
       			<ul class="links">
-      				<li><a href="#">Careers</a></li>
-      				<li><a href="#">Helpful Resources</a></li>
-      				<li><a href="#">Privacy/Term</a></li>
+      				<li><a href="careers.php">Careers</a></li>
+      				<li><a href="#Resources">Helpful Resources</a></li>
+      				<li><a href="#Privacy">Privacy/Term</a></li>
       			</ul>
       		</li>
       		<li>

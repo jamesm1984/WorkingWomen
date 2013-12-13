@@ -7,15 +7,15 @@
 
       <section id="gallery">
         <div id="mainImage">
-          <p>Sample text</p>
+          <p id="overLayText">Image 1</p>
         </div>
         <div id="galleryImages">
           <div id="imageContainer">
-            <a class="image1" href="#1"><div id="image1Overlay" class="overlay current"></div></a>
-            <a class="image2" href="#2"><div id="image2Overlay" class="overlay"></div></a>
-            <a class="image3" href="#3"><div id="image3Overlay" class="overlay"></div></a>
-            <a class="image4" href="#4"><div id="image4Overlay" class="overlay"></div></a>
-            <a class="image5" href="#5"><div id="image5Overlay" class="overlay"></div></a>
+            <a class="image1" href="#Image1"><div id="image1Overlay" class="overlay current"></div></a>
+            <a class="image2" href="#Image2"><div id="image2Overlay" class="overlay"></div></a>
+            <a class="image3" href="#Image3"><div id="image3Overlay" class="overlay"></div></a>
+            <a class="image4" href="#Image4"><div id="image4Overlay" class="overlay"></div></a>
+            <a class="image5" href="#Image5"><div id="image5Overlay" class="overlay"></div></a>
           </div>
         </div>
       </section> 
@@ -35,7 +35,7 @@
 
       <aside id="video">
         <h2>Video<h2>
-        <a href="#"></a>
+        <a href="#Video"></a>
 
       </aside>
 
